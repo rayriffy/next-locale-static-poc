@@ -1,0 +1,39 @@
+{
+  "name": "next-locale-static-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rayriffy/next-locale-static-poc.git",
+  "author": "Phumrapee Limpianchop <git@rayriffy.com>",
+  "license": "MIT",
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export"
+  },
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.5",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  }
+}
